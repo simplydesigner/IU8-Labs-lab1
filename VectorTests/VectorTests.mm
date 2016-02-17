@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Vector.hpp"
 
 @interface VectorTests : XCTestCase
 
@@ -25,8 +26,8 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    Vector v(12);
+    XCTAssertEqual(v.size(), 12);
 }
 
 - (void)testPerformanceExample {

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B381FAA1C745056002CE0B6 /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B381FA91C745056002CE0B6 /* Vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B381FB11C745056002CE0B6 /* Vector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B381FA61C745056002CE0B6 /* Vector.framework */; };
-		2B381FB61C745056002CE0B6 /* VectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B381FB51C745056002CE0B6 /* VectorTests.m */; };
+		2B381FB61C745056002CE0B6 /* VectorTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B381FB51C745056002CE0B6 /* VectorTests.mm */; };
+		2B381FC21C745075002CE0B6 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B381FC01C745075002CE0B6 /* Vector.cpp */; };
+		2B381FC31C745075002CE0B6 /* Vector.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2B381FC11C745075002CE0B6 /* Vector.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,12 @@
 
 /* Begin PBXFileReference section */
 		2B381FA61C745056002CE0B6 /* Vector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B381FA91C745056002CE0B6 /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		2B381FAB1C745056002CE0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B381FB01C745056002CE0B6 /* VectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B381FB51C745056002CE0B6 /* VectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VectorTests.m; sourceTree = "<group>"; };
+		2B381FB51C745056002CE0B6 /* VectorTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorTests.mm; sourceTree = "<group>"; };
 		2B381FB71C745056002CE0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B381FC01C745075002CE0B6 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		2B381FC11C745075002CE0B6 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		2B381FA81C745056002CE0B6 /* Vector */ = {
 			isa = PBXGroup;
 			children = (
-				2B381FA91C745056002CE0B6 /* Vector.h */,
 				2B381FAB1C745056002CE0B6 /* Info.plist */,
+				2B381FC01C745075002CE0B6 /* Vector.cpp */,
+				2B381FC11C745075002CE0B6 /* Vector.hpp */,
 			);
 			path = Vector;
 			sourceTree = "<group>";
@@ -80,7 +83,7 @@
 		2B381FB41C745056002CE0B6 /* VectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B381FB51C745056002CE0B6 /* VectorTests.m */,
+				2B381FB51C745056002CE0B6 /* VectorTests.mm */,
 				2B381FB71C745056002CE0B6 /* Info.plist */,
 			);
 			path = VectorTests;
@@ -93,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B381FAA1C745056002CE0B6 /* Vector.h in Headers */,
+				2B381FC31C745075002CE0B6 /* Vector.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B381FC21C745075002CE0B6 /* Vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B381FB61C745056002CE0B6 /* VectorTests.m in Sources */,
+				2B381FB61C745056002CE0B6 /* VectorTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
